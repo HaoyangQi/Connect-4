@@ -1,0 +1,48 @@
+# Project: Connect4
+# Makefile created by Dev-C++ 5.4.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = obj/Connect4_private.res
+OBJ      = obj/Framework.o obj/GameMain.o obj/aca.o obj/rca.o obj/Assistance.o obj/ui.o $(RES)
+LINKOBJ  = obj/Framework.o obj/GameMain.o obj/aca.o obj/rca.o obj/Assistance.o obj/ui.o $(RES)
+LIBS     = -L"C:/Program Files/Dev-Cpp/MinGW32/lib" -static-libstdc++ -static-libgcc
+INCS     = -I"C:/Program Files/Dev-Cpp/MinGW32/include"
+CXXINCS  = -I"C:/Program Files/Dev-Cpp/MinGW32/include"
+BIN      = release/Connect4.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+obj/Framework.o: Framework.c
+	$(CC) -c Framework.c -o obj/Framework.o $(CFLAGS)
+
+obj/GameMain.o: GameMain.c
+	$(CC) -c GameMain.c -o obj/GameMain.o $(CFLAGS)
+
+obj/aca.o: aca.c
+	$(CC) -c aca.c -o obj/aca.o $(CFLAGS)
+
+obj/rca.o: rca.c
+	$(CC) -c rca.c -o obj/rca.o $(CFLAGS)
+
+obj/Assistance.o: Assistance.c
+	$(CC) -c Assistance.c -o obj/Assistance.o $(CFLAGS)
+
+obj/ui.o: ui.c
+	$(CC) -c ui.c -o obj/ui.o $(CFLAGS)
+
+obj/Connect4_private.res: Connect4_private.rc 
+	$(WINDRES) -i Connect4_private.rc --input-format=rc -o obj/Connect4_private.res -O coff 

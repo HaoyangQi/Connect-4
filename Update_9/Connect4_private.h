@@ -1,0 +1,23 @@
+/* THIS FILE WILL BE OVERWRITTEN BY DEV-C++ */
+/* DO NOT EDIT ! */
+
+#ifndef CONNECT4_PRIVATE_H
+#define CONNECT4_PRIVATE_H
+
+/* VERSION DEFINITIONS */
+#define VER_STRING	"9.3.6.95"
+#define VER_MAJOR	9
+#define VER_MINOR	3
+#define VER_RELEASE	6
+#define VER_BUILD	95
+#define COMPANY_NAME	""
+#define FILE_VERSION	"9.3.6.95"
+#define FILE_DESCRIPTION	"Connect 4 Game"
+#define INTERNAL_NAME	"Connect4"
+#define LEGAL_COPYRIGHT	""
+#define LEGAL_TRADEMARKS	""
+#define ORIGINAL_FILENAME	"Connect4"
+#define PRODUCT_NAME	"Connect 4"
+#define PRODUCT_VERSION	"9.3.6.95"
+
+#endif /*CONNECT4_PRIVATE_H*/

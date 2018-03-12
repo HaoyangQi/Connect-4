@@ -1,0 +1,34 @@
+/* THIS FILE WILL BE OVERWRITTEN BY DEV-C++ */
+/* DO NOT EDIT! */
+
+#include <windows.h> // include for version info constants
+
+
+//
+// TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
+//
+1 VERSIONINFO
+FILEVERSION 7,1,5,72
+PRODUCTVERSION 7,1,5,72
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "040904E4"
+    {
+      VALUE "CompanyName", "Haoyang Qi"
+      VALUE "FileVersion", "7.1.5.72"
+      VALUE "FileDescription", "Connect 4 Game"
+      VALUE "InternalName", "Connect4"
+      VALUE "LegalCopyright", ""
+      VALUE "LegalTrademarks", ""
+      VALUE "OriginalFilename", "Connect4"
+      VALUE "ProductName", "Connect 4"
+      VALUE "ProductVersion", "7.1.5.72"
+    }
+  }
+  BLOCK "VarFileInfo"
+  {
+    VALUE "Translation", 0x0409, 1252
+  }
+}
